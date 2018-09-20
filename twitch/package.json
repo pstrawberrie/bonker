@@ -1,0 +1,17 @@
+{
+  "name": "listener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "listener.js",
+  "scripts": {
+    "start": "node twitch.js --colors"
+  },
+  "author": "pstrawberrie",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "chalk": "^2.4.1",
+    "tmi.js": "^1.2.1",
+    "ws": "^6.0.0"
+  }
+}
