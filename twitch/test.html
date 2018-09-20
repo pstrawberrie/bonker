@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bonker Chat Test</title>
+  <style>
+    body, html {
+      background:#222;
+      color:#fff;
+      width: 100%;
+      height: 100vh;
+    }
+    #messages {
+      height:85vh;
+      width:60%;
+      margin: auto;
+      background: rgba(255,255,255,.25);
+    }
+    .message {
+      display: block;
+      padding: 8px;
+      font-size: 12px;
+      width: 100%;
+    }
+    .name {
+      display: inline-block;
+      padding-right: 10px;
+    }
+    .message-text {
+      display: inline-block;
+      border-left: 1px solid #333;
+    }
+    #input {
+      height: 15vh;
+      box-sizing: border-box;
+      background: rgba(255,255,255,.4);
+      border:0;
+      border-top: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="messages">
+
+  </div>
+  <input type="text" id="input" placeholder="Enter Chat Message...">
+
+  <script>
+    console.log('Bonker Chat Test');
+    var socket = io.connect('http://localhost:3001');
+    socket.on('connect', function(data) {
+        socket.emit('join', 'Hello World from client');
+    });
+  </script>
+</body>
+</html>
