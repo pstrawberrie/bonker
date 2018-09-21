@@ -72,10 +72,11 @@ function startTest() {
   const app = express();
   const server = require('http').createServer(app);
   const io = require('socket.io')(server);
+  const testPort = 3001;
 
   app.use(express.static(__dirname + '/node_modules'));
   app.get('/', (req, res, next) => {
-    res.sendFile(__dirname + 'test.html');
+    res.sendFile(__dirname + '/test.html');
   });
 
   io.on('connection', function(client) {
@@ -89,7 +90,9 @@ function startTest() {
     });
   });
 
-  server.listen(3001);
+  server.listen(testPort, () => {
+    console.log(chalk.cyan(`+++ Test Server Started on http://localhost:${testPort} +++`));
+  });
 }
 
 //+ Initiate Service
