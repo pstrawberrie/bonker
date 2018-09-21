@@ -68,6 +68,7 @@ function startTwitch() {
  * - skips Twitch IRC setup and uses websockets/HTML for testing
  */
 function startTest() {
+  const uuidv4 = require('uuid/v4');
   const express = require('express');
   const app = express();
   const server = require('http').createServer(app);
@@ -85,8 +86,31 @@ function startTest() {
     client.on('join', function(data) {
       console.log(data);
     });
-    client.on('message', function(data) {
+    client.on('job', function(data) {
       console.log(data);
+      const job = {
+        channel: '#channel',
+        userstate: {
+          id: uuidv4(),
+          badges: { broadcaster: '1', premium: '1' },
+          color: '#B3194F',
+          'display-name': 'admin',
+          emotes: null,
+          mod: false,
+          'room-id': '111',
+          subscriber: false,
+          'tmi-sent-ts': new Date().getTime(),
+          turbo: false,
+          'user-id': '111',
+          'user-type': null,
+          'emotes-raw': null,
+          'badges-raw': 'broadcaster/1,premium/1',
+          username: 'admin',
+          'message-type': 'chat',
+        },
+        message: data
+      };
+      io.emit('job', JSON.stringify(job));
     });
   });
 

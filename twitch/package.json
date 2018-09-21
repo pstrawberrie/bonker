@@ -12,7 +12,9 @@
     "amqplib": "^0.5.2",
     "chalk": "^2.4.1",
     "express": "^4.16.3",
+    "normalize.css": "^8.0.0",
     "socket.io": "^2.1.1",
-    "tmi.js": "^1.2.1"
+    "tmi.js": "^1.2.1",
+    "uuid": "^3.3.2"
   }
 }
