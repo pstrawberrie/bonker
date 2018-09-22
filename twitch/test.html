@@ -47,6 +47,9 @@
       background: rgba(0,0,0,.25);
       border-top: 1px solid #000;
     }
+    #messages .message:last-child {
+      border-bottom: 1px solid #000;
+    }
 
     .name {
       display: inline-block;
@@ -128,11 +131,8 @@
 
     // Sockets
     var socket = io.connect('http://localhost:3001');
-    socket.on('connect', function(data) {
-        socket.emit('join', 'New Browser Client Connected');
-    });
     socket.on('job', function(data) {
-        console.log(`Job Received From Server:\n ${data}`);
+        console.log(data);
     });
 
     // Socket Emit 'job'
