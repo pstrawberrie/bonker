@@ -5,7 +5,6 @@ if(process.env.NODE_ENV === undefined) process.env.NODE_ENV = 'development';
 const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -14,7 +13,7 @@ module.exports = {
   entry: './src/index.js',
 
   output: {
-    filename: 'app-[hash].js',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
   },
 
@@ -47,18 +46,13 @@ module.exports = {
   // - define environment variables here from 'site' JSON
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'app-[hash].css',
-      chunkFilename: '[id].css'
+      filename: 'app.css'
     }),
     new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-      title: 'Phoenix',
-      template: 'src/index.html',
-      minify: {removeComments: true, collapseWhitespace: true, conservativeCollapse: true}
-    }),
     new CopyWebpackPlugin([
       { from: './src/public/fonts', to: './fonts' },
-      { from: './src/public/images', to: './images' }
+      { from: './src/public/images', to: './images' },
+      { from: './src/index.html', to: './' }
     ])
   ]
 

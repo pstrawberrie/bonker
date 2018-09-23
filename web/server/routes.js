@@ -1,14 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const { handleAsync } = require('./util/errorHandler');
+//const { handleAsync } = require('./util/errorHandler');
 
 // Controllers
-const twitchController = require('./controllers/twitchController');
-const profileController = require('./controllers/profileController');
+//const userController = require('./controllers/userController');
 
 // ++ Default Profile GET
-router.get('/profiles', 
-  handleAsync(profileController.getProfiles)
-);
+router.get('/', (req, res) => {
+  res.sendFile('../app/dist/index.html');
+});
 
 module.exports = router;

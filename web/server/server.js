@@ -13,8 +13,9 @@ mongoose.connection.on('error', (err) => {
 });
 mongoose.connection.once('open', (err) => {
   console.log(chalk.cyan(`+++ Connected to Mongodb +++`));
+  startServer();
 });
-require('../lib/models/User');
+require('../../lib/models/User');
 
 /**
  * Include Base Dependencies
@@ -22,7 +23,7 @@ require('../lib/models/User');
 const express = require('express');
 const bodyParser = require('body-parser');
 const routes = require('./routes');
-const webHandler = require('../../lib/util/webHandler');
+const webHandler = require('../../lib/util/web');
 
 /**
  * Web Server
@@ -31,6 +32,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
+app.use(express.static('../app/dist'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', routes);
@@ -47,9 +49,8 @@ function startServer() {
   /**
    * Start Web Server
    */
-  app.set('port', process.env.PORT || 7777);
-  server.listen(7777, () => {
-    console.log(chalk.bold.white.bgBlue(` Phoenix Bot Server Started @ localhost:${server.address().port} `));
+  server.listen(config.webPort, () => {
+    console.log(chalk.cyan(`+++ Bonker Web Server Started: localhost:${server.address().port} +++`));
 
     // Sockets
     io.on('connection', socket => {

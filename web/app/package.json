@@ -16,7 +16,7 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js --progress --colors",
+    "start": "webpack --watch --config webpack.dev.js --progress --colors",
     "build": "webpack --config webpack.prod.js --progress --colors"
   },
   "devDependencies": {
