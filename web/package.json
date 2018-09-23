@@ -1,0 +1,50 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "pstrawberrie",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon -e js,pug server.js --colors",
+    "webpack": "webpack --config webpack.dev.js --mode development --watch --progress --colors",
+    "start": "concurrently \"npm:server\" \"npm:webpack\""
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modues/*"
+    ],
+    "delay": "500"
+  },
+  "browserslist": [
+    "> 1%",
+    "IE 10"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.17",
+    "mongoose-mongodb-errors": "0.0.2",
+    "pug": "^2.0.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-merge": "^4.1.4"
+  }
+}

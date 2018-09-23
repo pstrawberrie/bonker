@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  //- Main Content
+  .section
+    a.btn.ghost.icon.modal-trigger(href="#", data-triggers-modal="newScreen")
+      span.fa.fa-desktop
+      span New Screen
+
+  //- Modals
+  .modal(data-modal="newScreen")
+    .modal__body
+      | hey this is a modal body
+
+    

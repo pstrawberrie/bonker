@@ -4,7 +4,7 @@
   "description": "",
   "main": "listener.js",
   "scripts": {
-    "start": "node twitch.js --colors"
+    "start": "nodemon -e js twitch.js --colors"
   },
   "author": "pstrawberrie",
   "license": "MIT",
@@ -16,5 +16,9 @@
     "socket.io": "^2.1.1",
     "tmi.js": "^1.2.1",
     "uuid": "^3.3.2"
+  },
+  "nodemonConfig": {
+    "ignore": ["node_modues/*"],
+    "delay": "500"
   }
 }

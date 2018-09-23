@@ -4,7 +4,7 @@
   "description": "",
   "main": "core.js",
   "scripts": {
-    "start": "node core.js --colors",
+    "start": "nodemon -e js core.js --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "pstrawberrie",
@@ -17,5 +17,9 @@
     "mongoose": "^5.2.17",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1"
+  },
+  "nodemonConfig": {
+    "ignore": ["node_modues/*"],
+    "delay": "500"
   }
 }

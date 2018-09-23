@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= `${title} | Bonker Bot`
+    link(rel="stylesheet", href="/fonts/fonts.css")
+    link(rel="stylesheet", href="/dist/app.css")
+    link(rel="shortcut icon", type="image/png", href="/images/favicon.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(class=`theme-default`)
+    block header
+      include includes/nav
+    block messages
+      if locals.flashes
+        .container__medium#flashes
+          .flash-messages
+            - const categories = Object.keys(locals.flashes)
+            each category in categories
+              each message in flashes[category]
+                .flash(class=`flash--${category}`, onClick="this.remove()")
+                  p.flash__text!= message
+                  a.flash__remove
+                    span.icon-circle-with-cross
+    .content
+      block content
+
+    block footer
+      include includes/footer
+
+    block scripts
+      script(src=`/socket.io/socket.io.js`)
+      script(src="/dist/app.js")

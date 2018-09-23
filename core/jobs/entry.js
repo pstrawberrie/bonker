@@ -13,12 +13,12 @@ coreSocketServer.on('connection', client => {
 
   client.on('web', data => {
     console.log(chalk.grey(`Socket Request From Web: "${data}"`));
-  }); 
+  });
 });
 
 const twitchSocketClient = require('socket.io-client').connect(`http://localhost:${config.twitchPort}`);
 twitchSocketClient.on('connect', function open() {
-  console.log(chalk.cyan(`+++ Core Entry is connected to Twitch Socket +++`));
+  console.log(chalk.grey(`+ Core Entry is connected to Twitch Socket +`));
 });
 // Send a 'finished' socket to indicate a job is finished (WARNING: this was made to block )
 function finishJob() {
@@ -27,8 +27,11 @@ function finishJob() {
 
 const webSocketClient = require('socket.io-client').connect(`http://localhost:${config.webPort}`);
 webSocketClient.on('connect', function open() {
-  console.log(chalk.cyan(`+++ Core Entry is connected to Web Socket +++`));
+  console.log(chalk.grey(`+ Core Entry is connected to Web Socket +`));
 });
+function sendSocketToWeb(data) {
+  webSocketClient.emit('core', data);
+}
 
 const friskUser = require('./default/friskUser');
 
