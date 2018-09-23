@@ -51,12 +51,17 @@
       border-bottom: 1px solid #000;
     }
 
-    .name {
+    .name,
+    .name-bot {
       display: inline-block;
       font-size: 16px;
       background: rgba(0,0,0,.45);
       padding: 8px;
       border-right: 1px solid #000;
+      width: 40px;
+    }
+    .name-bot {
+      background: rgba(255,0,0,.4);
     }
     
     .message-text {
@@ -99,14 +104,15 @@
     var input = document.getElementById('input');
 
     // New Message Item
-    var createNewMessage = function(messageString) {
+    var createNewMessage = function(messageString, isBot) {
       if(messageString === '') return;
+      
       var name = document.createElement('div');
       var msg = document.createElement('div');
       var msgText = document.createElement('div');
 
-      name.className = 'name';
-      name.innerText = 'user';
+      name.className = isBot ? 'name-bot' : 'name';
+      name.innerText = isBot ? 'BOT' : 'user';
 
       msg.className = 'message';
 
@@ -117,8 +123,16 @@
       messageArea.appendChild(msg);
       msg.appendChild(name);
       msg.appendChild(msgText);
-      socketEmitJob(msgString);
+      
+      if(!isBot) socketEmitJob(msgString);
       messageArea.scrollTop = messageArea.scrollHeight;
+
+      if(messageString === '!clear') {
+        var messageEles = document.querySelectorAll('#messages .message');
+        for(var i = 0; i < messageEles.length; i++) {
+          messageEles[i].remove();
+        }
+      }
     }
 
     // Event Listeners
@@ -133,6 +147,10 @@
     var socket = io.connect('http://localhost:3001');
     socket.on('job', function(data) {
         console.log(data);
+    });
+    socket.on('post', function(data) {
+        console.log('Twitch bot sent post: ' + data.msg);
+        createNewMessage(data.msg, true);
     });
 
     // Socket Emit 'job'

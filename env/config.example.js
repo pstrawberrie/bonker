@@ -10,6 +10,7 @@ module.exports = {
       twitchKey: 'oauth:xxxx',
       twitchAdmin: 'coolguy',
       twitchBot: 'coolguyb0t',
+      twitchCommandFlag: '!',
     },
     production: {
       twitchPort: 3001,
@@ -19,6 +20,7 @@ module.exports = {
       twitchKey: 'oauth:xxxx',
       twitchAdmin: 'coolguy',
       twitchBot: 'coolguyb0t',
+      twitchCommandFlag: '!',
     },
   },
 

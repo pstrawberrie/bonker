@@ -28,22 +28,23 @@ function sendJob(data) {
  * @param {string} msgTarget
  * @param {string} msg
  */
-function botSend(msg, msgType, msgTarget) {
-  switch(msgType) {
-    case 'whisper':
-      if(!msgType || !msgTarget) return;
-      twitch.whisper(msgTarget, msg);
-      break;
-
-    default:
-      twitch.say(config.twitchAdmin, msg);
-      break;
+function botSend(data) {
+  if(!data.msg || config.testMode) return;
+  if(data.msgType && data.msgTarget) {
+    twitch.whisper(data.msgTarget, data.msg)
+    .then(data => { console.log('botsend whisper successful') })
+    .catch(err => console.log('error in botsend whisper: ' + err));
+  } else {
+    twitch.say(config.twitchAdmin, data.msg)
+    .then(data => { console.log('botsend successful') })
+    .catch(err => console.log('error in botsend say: ' + err));
   }
 }
 
 //-----------------//
 //+ Start Service +//
 //-----------------//
+let canSendJobs = true;
 
 /**
  * Set Up Queue Connection
@@ -89,17 +90,17 @@ twitch.on('disconnected', function() {
 
 //+ Twitch Chat Listener
 twitch.on("chat", function (channel, userstate, message, self) {
-
   //- Soft validation
   //- Accept all standard chat messages
   //- Only allow whispers from bot admin (config.twitchAdmin)
-  if (self) return;
+  if (self || !canSendJobs) return;
   if (userstate['message-type'] === 'whisper' && userstate.username !== config.twitchAdmin) {
     console.log(chalk.red(`Received whisper from non-admin "${userstate.username}". Denying job.`));
     return;
   }
   const job = util.createJob(channel, userstate, message);
   sendJob(job);
+  canSendJobs = false;
 });
 
 //+ Twitch Connect
@@ -121,23 +122,33 @@ if(config.testMode) {
   });
 }
 
-io.on('connection', function(client) {
+io.on('connection', client => {
   console.log(chalk.grey(`+ Client Connected to Websocket +`));
 
   // Send a Job from Test Mode
   if(config.testMode) {
-    client.on('job', function(data) {
+    client.on('job', data => {
       console.log(chalk.grey(`Received Client Message "${data}"`));
-      const job = util.createTestJob(data);
+      const twitchFormat = util.createTestJob(data);
+      const job = util.createJob(twitchFormat.channel, twitchFormat.userstate, twitchFormat.message);
       sendJob(job);
       io.emit('job', `Server Received Job with Message "${data}"`);
     });
   }
 
+  // Finish Job From Web
+  client.on('finished', data => {
+    if(data === '1') canSendJobs = true;
+    console.log(chalk.green('Server Finished Job'));
+  });
+
   // Post Request from Core or Web
-  client.on('post', function(data) {
-    console.log(chalk.grey(`Post Request from another Service: "${data}"`));
-    botSend(data.msg, data.msgType || null, data.msgTarget || null);
+  client.on('post', data => {
+    const parsedData = JSON.parse(data);
+    console.log(chalk.grey(`Post Request from another Service: "${parsedData}"`));
+    botSend(parsedData);
+
+    if(config.testMode) io.emit('post', parsedData);
   }); 
 
 });
