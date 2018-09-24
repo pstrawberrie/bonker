@@ -36,7 +36,7 @@ const Modal = {
     if(bool === false) {
       [...Modal.ele.modals].map(modal => {
         modal.classList.remove('active');
-      })
+      });
     }
     if(!modalEle) return;
     modalEle.classList.add('active');
