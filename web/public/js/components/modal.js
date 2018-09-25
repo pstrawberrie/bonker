@@ -8,7 +8,13 @@ const Modal = {
     modals: document.getElementsByClassName('modal'),
     getModal(name) {
       return document.querySelector(`[data-modal=${name}]`)
-    }
+    },
+    getModalBody(modal) {
+      return modal.querySelector('.modal__body');
+    },
+    getActiveModal() {
+      return document.querySelector('.modal.active');
+    },
   },
 
   //+ Add Event Listeners
@@ -31,15 +37,35 @@ const Modal = {
 
   },
 
-  //+ Function to Display or Hide Modals
+  //+ Function to Display or Hide Modals (fixed animations built in)
   display(bool, modalEle) {
-    if(bool === false) {
-      [...Modal.ele.modals].map(modal => {
-        modal.classList.remove('active');
-      });
+    if(bool == false) {
+      //- Close
+      const modalEle = Modal.ele.getActiveModal();
+      if(modalEle == null) return;
+      const modalBody = Modal.ele.getModalBody(modalEle);
+      util.addAnimation(modalBody, 'zoomOut');
+      setTimeout(() => {
+        util.prepAnimations([modalBody]);
+        util.addAnimation(modalEle, 'fadeOut');
+        setTimeout(() => {
+          modalEle.classList.add('hidden');
+          modalEle.classList.remove('active');
+        },250);
+      },250);
+      return;
+    } else {
+      //- Open
+      if(!modalEle) return;
+      const modalBody = Modal.ele.getModalBody(modalEle);
+      util.prepAnimations([modalEle, modalBody]);
+      modalEle.classList.add('active');
+      modalEle.classList.remove('hidden');
+      util.addAnimation(modalEle, 'fadeIn');
+      setTimeout(() => {
+        util.addAnimation(modalBody, 'fadeInDown');
+      },130);
     }
-    if(!modalEle) return;
-    modalEle.classList.add('active');
   },
 
   //+ Initialize Modals
