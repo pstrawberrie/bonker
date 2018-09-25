@@ -1,11 +1,39 @@
 extends layout
 
 block content
-  //- Main Content
-  .section
-    a.btn.ghost.icon.modal-trigger(href="#", data-triggers-modal="newScreen")
-      span.fa.fa-desktop
-      span New Screen
+  //- Dashboard
+  .section.dashboard
+    .dashboard__area.dashboard--users
+      .dashboard__area_title Users
+      .dashboard__area_count= userCount
+      a.btn.ghost.icon.modal-trigger(href="#users")
+          span.fa.fa-user-astronaut
+          span Manage Users
+    .dashboard__area.dashboard--screens
+      .dashboard__area_title Screens
+      .dashboard__area_count= screenCount
+      if screenCount < 1
+        a.btn.ghost.icon.modal-trigger(href="#", data-triggers-modal="newScreen")
+          span.fa.fa-desktop
+          span New Screen
+    a.dashboard__area(href="##")
+      .dashboard__area_title Stats
+      .dashboard__area_count 12
+    a.dashboard__area(href="##")
+      .dashboard__area_title Stats
+      .dashboard__area_count 12
+    a.dashboard__area(href="##")
+      .dashboard__area_title Stats
+      .dashboard__area_count 12
+    a.dashboard__area(href="##")
+      .dashboard__area_title Stats
+      .dashboard__area_count 12
+
+  //- Action Buttons
+  //- .section
+  //-   a.btn.ghost.icon.modal-trigger(href="#", data-triggers-modal="newScreen")
+  //-     span.fa.fa-desktop
+  //-     span New Screen
 
   //- Modals
   .modal.hidden(data-modal="newScreen")

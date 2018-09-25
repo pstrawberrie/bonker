@@ -4,8 +4,10 @@
 @light: #efefef;
 @dark: #333;
 
-@lightTransparent: rgba(255,255,255,.25);
+@lightTransparent: rgba(255,255,255,.55);
+@lighterTransparent: rgba(255,255,255,.85);
 @darkTransparent: rgba(0,0,0,.55);
+@darkerTransparent: rgba(0,0,0,.85);
 
 @error: #f03844;
 @success: #30f748;
@@ -21,7 +23,7 @@ body {
 .btn {
   background: @light;
   color: @dark!important;
-  transition: all .2s ease-in-out;
+  transition: all .15s ease-in-out;
 
   &:hover {
     background: @white;
@@ -40,9 +42,17 @@ body {
 
 // Modals
 .modal {
-  background: @darkTransparent;
+  background: @darkerTransparent;
   
   &__body {
+    background: @lighterTransparent;
+    color: @dark;
+  }
+}
+
+// Dashboard
+.dashboard {
+  &__area {
     background: @darkTransparent;
   }
 }

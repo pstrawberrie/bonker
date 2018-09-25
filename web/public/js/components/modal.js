@@ -29,10 +29,16 @@ const Modal = {
     });
 
     // Document Off-click
-    document.addEventListener('click', (e) => {
+    document.addEventListener('click', e => {
       const closestModal = util.getClosestEleByClass(e.target, 'modal__body');
       const closestTrigger = util.getClosestEleByClass(e.target, 'modal-trigger');
       if(closestModal == null && closestTrigger == null) Modal.display(false);
+    });
+    // Document Escape Key
+    document.addEventListener('keyup', e => {
+      if(e.keyCode === 27 || e.which === 27) {
+        Modal.display(false);
+      }
     });
 
   },
@@ -44,7 +50,7 @@ const Modal = {
       const modalEle = Modal.ele.getActiveModal();
       if(modalEle == null) return;
       const modalBody = Modal.ele.getModalBody(modalEle);
-      util.addAnimation(modalBody, 'zoomOut');
+      util.addAnimation(modalBody, 'fadeOutUp');
       setTimeout(() => {
         util.prepAnimations([modalBody]);
         util.addAnimation(modalEle, 'fadeOut');

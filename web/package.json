@@ -6,7 +6,7 @@
   "author": "pstrawberrie",
   "license": "MIT",
   "scripts": {
-    "server": "nodemon -e js,pug server.js --colors",
+    "server": "nodemon -e js,pug server.js --ignore public/ --colors",
     "webpack": "webpack --config webpack.dev.js --mode development --watch --progress --colors",
     "start": "concurrently \"npm:server\" \"npm:webpack\""
   },

@@ -17,6 +17,7 @@ mongoose.connection.once('open', (err) => {
   startServer();
 });
 require('../lib/models/User');
+require('../lib/models/Screen');
 
 /**
  * Web Server Setup
