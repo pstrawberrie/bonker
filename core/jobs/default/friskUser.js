@@ -18,8 +18,17 @@ module.exports = (mongoose, jobJson) => {
         })
         .catch(err => reject(err));
       } else {
-        console.log(chalk.grey(`-> User already exists`));
-        resolve(user);
+        // Check if the user's twitch-id exists but the user's twitch name has changed
+        if(user.twitchName !== jobJson.user.name && user.twitchId === jobJson.user.id) {
+          db.updateTwitchUser({twitchId: jobJson.user.id}, {twitchName: jobJson.user.name}, {new: true})
+          .then(updatedUser => {
+            console.log(chalk.grey(`-> Updated existing user's twitch name`));
+            resolve(updatedUser);
+          }).catch(err => {console.log(`Error updating existing id with new twitch name: ${err}`)});
+        } else {
+          console.log(chalk.grey(`-> User already exists`));
+          resolve(user);
+        }
       }
     }).catch(err => reject(err));
   });

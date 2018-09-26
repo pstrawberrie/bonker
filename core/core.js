@@ -13,9 +13,37 @@ mongoose.connection.on('error', (err) => {
 });
 mongoose.connection.once('open', (err) => {
   console.log(chalk.cyan(`+++ Connected to Mongodb +++`));
-  rabbitConnect();
+  requireModels();
+  seed().then(() => {
+    rabbitConnect();
+  }).catch(err => console.log('Seed Failed'));
 });
-require('../lib/models/User');
+
+/**
+ * Require Models
+ */
+function requireModels() {
+  require('../lib/models/User');
+}
+
+/**
+ * Seed Data
+ */
+function seed() {
+  const users = require('../lib/seedData/users.json');
+  return new Promise((resolve, reject) => {
+    const User = mongoose.model('User');
+    User.deleteMany({})
+    .then(a => {
+      console.log(chalk.yellow('-> Data Removed'));
+      User.insertMany(users)
+      .then(b => {
+        console.log(chalk.yellow('-> Seed Data Inserted'));
+        resolve();
+      }).catch(err => reject(`Error inserting Test Data: ${err}`));
+    }).catch(err => reject(`Error Loading Test Data: ${err}`));
+  });
+}
 
 /**
  * RabbitMQ Consumer

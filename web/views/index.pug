@@ -6,7 +6,7 @@ block content
     .dashboard__area.dashboard--users
       .dashboard__area_title Users
       .dashboard__area_count= userCount
-      a.btn.ghost.icon.modal-trigger(href="#users")
+      a.btn.ghost.icon(href="#users")
           span.fa.fa-user-astronaut
           span Manage Users
     .dashboard__area.dashboard--screens
@@ -16,24 +16,22 @@ block content
         a.btn.ghost.icon.modal-trigger(href="#", data-triggers-modal="newScreen")
           span.fa.fa-desktop
           span New Screen
-    a.dashboard__area(href="##")
+      else
+        a.btn.ghost.icon(href="#screens")
+          span.fa.fa-desktop
+          span Manage Screens
+    .dashboard__area
       .dashboard__area_title Stats
       .dashboard__area_count 12
-    a.dashboard__area(href="##")
+    .dashboard__area
       .dashboard__area_title Stats
       .dashboard__area_count 12
-    a.dashboard__area(href="##")
+    .dashboard__area
       .dashboard__area_title Stats
       .dashboard__area_count 12
-    a.dashboard__area(href="##")
+    .dashboard__area
       .dashboard__area_title Stats
       .dashboard__area_count 12
-
-  //- Action Buttons
-  //- .section
-  //-   a.btn.ghost.icon.modal-trigger(href="#", data-triggers-modal="newScreen")
-  //-     span.fa.fa-desktop
-  //-     span New Screen
 
   //- Modals
   .modal.hidden(data-modal="newScreen")

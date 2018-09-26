@@ -1,0 +1,1106 @@
+[
+  {
+    "_id": "5baac7d87e96d0158c7f77c8",
+    "twitchId": "138b9273-efb0-44fe-b80c-2b150f6fb022",
+    "twitchName": "pstrawberrie",
+    "joinDate": "2018-02-01T06:41:11",
+    "lastActive": "2017-03-25T12:03:42",
+    "isAdmin": true
+  },
+  {
+    "_id": "5baac7d88c5d5d0949b089bf",
+    "twitchId": "1a5dfd99-7d7c-442c-9e6c-c49b9e6f6d28",
+    "twitchName": "pate",
+    "joinDate": "2017-10-14T07:33:56",
+    "lastActive": "2018-05-21T07:45:53",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e5df43d93dbd0102",
+    "twitchId": "020fb527-a8e0-477f-80b8-9c3332b59710",
+    "twitchName": "bobbi",
+    "joinDate": "2017-07-09T05:44:50",
+    "lastActive": "2017-12-11T11:51:33",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8574f13592fdc7729",
+    "twitchId": "97e122fd-12ad-4af2-b5d7-403fde30c50a",
+    "twitchName": "hicks",
+    "joinDate": "2018-02-09T06:02:33",
+    "lastActive": "2018-01-01T06:11:53",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d875fb6f09c4289696",
+    "twitchId": "24380ca8-6f15-49ed-818d-c0897ff1e38c",
+    "twitchName": "mcguire",
+    "joinDate": "2017-04-01T02:51:49",
+    "lastActive": "2018-05-03T01:41:50",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e70ba3a4a2989992",
+    "twitchId": "c30ffd33-97ca-44e8-be6d-53895fe7c9fa",
+    "twitchName": "knowles",
+    "joinDate": "2017-05-30T01:47:30",
+    "lastActive": "2018-05-10T07:59:16",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8cb28073c86fa4d5e",
+    "twitchId": "25e2e096-d3a8-4d06-8a0c-e50fe40ff8b9",
+    "twitchName": "lizzie",
+    "joinDate": "2017-05-26T04:11:52",
+    "lastActive": "2018-03-05T08:24:15",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d819f54917482b632a",
+    "twitchId": "cf23824e-c8e1-43a7-8983-9ecee87c074f",
+    "twitchName": "lessie",
+    "joinDate": "2017-08-02T11:55:39",
+    "lastActive": "2017-03-31T11:37:50",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d87597658b5b24e845",
+    "twitchId": "3a3f620a-4fcf-424d-8b11-c1acf05534fd",
+    "twitchName": "humphrey",
+    "joinDate": "2017-06-26T08:07:17",
+    "lastActive": "2018-07-11T11:09:20",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d80e6879f709e82510",
+    "twitchId": "1ac58845-510e-4cb8-86e8-8354b6425538",
+    "twitchName": "aurelia",
+    "joinDate": "2017-06-29T04:20:47",
+    "lastActive": "2017-09-02T07:11:45",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d82fa754230d0d40c7",
+    "twitchId": "66383782-1195-42f0-846d-04f4cb31ac63",
+    "twitchName": "verna",
+    "joinDate": "2017-01-07T07:19:06",
+    "lastActive": "2017-12-19T08:48:08",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d85f1c424f42d9e7a0",
+    "twitchId": "5159d5aa-ece9-4c1a-95fd-6f148213b562",
+    "twitchName": "boone",
+    "joinDate": "2018-01-15T07:42:01",
+    "lastActive": "2018-07-09T03:21:12",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d817b237d5aab6120d",
+    "twitchId": "1d6f3aad-c47c-4bfb-9b49-64591a92220c",
+    "twitchName": "wooten",
+    "joinDate": "2018-05-24T05:40:38",
+    "lastActive": "2017-02-13T09:19:18",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8ba8c00418117dc71",
+    "twitchId": "3ee61a26-3a96-4f75-902c-12c221ad6420",
+    "twitchName": "castro",
+    "joinDate": "2017-05-31T02:41:48",
+    "lastActive": "2018-05-04T05:16:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d84102210b9b764db2",
+    "twitchId": "2556c318-5692-48ed-af2f-33f5b4b9f772",
+    "twitchName": "mallory",
+    "joinDate": "2018-02-09T01:18:55",
+    "lastActive": "2017-07-03T12:38:05",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8d8ee5ac50a89d40f",
+    "twitchId": "04db6c96-28d0-4bc8-869f-22e6d33e0d07",
+    "twitchName": "lloyd",
+    "joinDate": "2017-06-03T02:09:14",
+    "lastActive": "2017-12-20T10:47:15",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e549fda05642ce27",
+    "twitchId": "9aaf2f3a-0378-45df-998e-8dc812088088",
+    "twitchName": "best",
+    "joinDate": "2018-04-27T09:37:04",
+    "lastActive": "2017-10-18T10:47:50",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8d24c3652985f6c68",
+    "twitchId": "7bc83e5c-3f46-4bf8-b295-e8689e1722a5",
+    "twitchName": "herring",
+    "joinDate": "2018-02-04T01:11:26",
+    "lastActive": "2017-05-10T05:49:46",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8f9afaae93a65a07e",
+    "twitchId": "2a2394d1-87e2-4855-9b71-78451e62bad1",
+    "twitchName": "meyer",
+    "joinDate": "2017-03-09T09:03:58",
+    "lastActive": "2017-07-21T06:44:20",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8ef5cbed3e49d098c",
+    "twitchId": "43bc7aab-631d-45ea-9dff-474bd92f1b54",
+    "twitchName": "owen",
+    "joinDate": "2018-08-08T07:36:13",
+    "lastActive": "2017-10-03T08:57:26",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8bb2b7a30089e3b8d",
+    "twitchId": "bf4ecade-f993-4721-bc3d-785194f91e08",
+    "twitchName": "dorothea",
+    "joinDate": "2017-06-26T08:06:20",
+    "lastActive": "2017-02-10T03:21:12",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8a5b910fd645e48c5",
+    "twitchId": "21f64d3e-d26e-4c55-9867-49988a760cd6",
+    "twitchName": "alta",
+    "joinDate": "2017-06-08T03:33:05",
+    "lastActive": "2017-03-30T01:28:10",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8fb7d658bc05d6ea1",
+    "twitchId": "7d1560cd-6024-40e4-a00e-5d62781612cf",
+    "twitchName": "rivas",
+    "joinDate": "2018-05-04T04:34:03",
+    "lastActive": "2017-07-27T07:38:51",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d839105c61cfce2e45",
+    "twitchId": "c5133fd4-d663-44ef-9ab8-703bbaf72d42",
+    "twitchName": "herrera",
+    "joinDate": "2018-03-03T05:06:54",
+    "lastActive": "2017-02-26T01:35:08",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d87d3769c730c88bb4",
+    "twitchId": "59fe84cd-36c3-483b-bee2-0fd9a2d1678f",
+    "twitchName": "ruiz",
+    "joinDate": "2017-11-10T12:37:07",
+    "lastActive": "2018-05-13T09:12:18",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e4f73f65d6837260",
+    "twitchId": "1b2f00da-10c1-4a57-acf7-b83b42c7a3b7",
+    "twitchName": "flora",
+    "joinDate": "2018-08-08T08:01:36",
+    "lastActive": "2018-07-23T04:39:05",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8ebabe7a0adb87f8f",
+    "twitchId": "dada0b16-f053-4a6a-9616-b8c636fb348b",
+    "twitchName": "celia",
+    "joinDate": "2018-05-20T03:05:50",
+    "lastActive": "2018-01-13T02:19:02",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d87e81312f72f45353",
+    "twitchId": "cf1193cb-2b9d-4a11-a326-cda20c6d3375",
+    "twitchName": "sheryl",
+    "joinDate": "2018-04-10T05:31:38",
+    "lastActive": "2017-07-03T06:44:13",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d863236e39690ade00",
+    "twitchId": "0dfa513d-9ec5-4f47-851a-0b08bcc65b5d",
+    "twitchName": "nona",
+    "joinDate": "2017-03-16T02:34:11",
+    "lastActive": "2017-06-16T05:57:21",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8bd3fafae1b351475",
+    "twitchId": "b0514e95-80fe-43cf-8ecf-5327b4eb77e5",
+    "twitchName": "santana",
+    "joinDate": "2018-09-08T07:25:28",
+    "lastActive": "2017-08-08T01:45:54",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8eb9a8ccc50ae34f8",
+    "twitchId": "fa7d7d17-d940-4bde-aa2f-6487660b293a",
+    "twitchName": "patrick",
+    "joinDate": "2017-05-18T02:55:25",
+    "lastActive": "2017-07-17T12:31:41",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d836744b98a4d443d1",
+    "twitchId": "d645d0be-f2ab-4ed7-a1dd-c371170fc798",
+    "twitchName": "penny",
+    "joinDate": "2017-07-22T08:08:57",
+    "lastActive": "2018-07-18T02:36:11",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d840e80cd5f4d5f2eb",
+    "twitchId": "24435219-33a6-4b57-8c3a-1ceaff9eefe5",
+    "twitchName": "staci",
+    "joinDate": "2017-06-12T11:28:31",
+    "lastActive": "2017-12-19T10:03:14",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d84fd4fa4189e9b414",
+    "twitchId": "eee42b78-1319-4fed-a8dc-acb79f29723e",
+    "twitchName": "hooper",
+    "joinDate": "2017-05-10T03:01:25",
+    "lastActive": "2018-05-14T12:45:13",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d87260a3626c27c103",
+    "twitchId": "86dfea80-0816-4b89-844c-3c62facf4cb5",
+    "twitchName": "villarreal",
+    "joinDate": "2018-01-08T05:15:13",
+    "lastActive": "2017-03-23T11:09:23",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d80094fd9144e18b35",
+    "twitchId": "5c77c08b-d45b-4698-981a-d6f8c39b0c88",
+    "twitchName": "helen",
+    "joinDate": "2018-03-14T07:25:37",
+    "lastActive": "2017-02-21T11:08:35",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d849893d81f00e7b06",
+    "twitchId": "f71f0527-bdf0-4ce5-8a8a-7cf939e422f0",
+    "twitchName": "vilma",
+    "joinDate": "2017-08-03T09:01:21",
+    "lastActive": "2017-09-20T09:37:32",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d873adbaf01d4236c7",
+    "twitchId": "090b8efe-e5b5-4b69-a6f4-8b898ff94223",
+    "twitchName": "tamera",
+    "joinDate": "2017-03-04T10:18:36",
+    "lastActive": "2018-04-10T08:54:57",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d831828dc3ae797f6e",
+    "twitchId": "732ea2e9-4f70-4c78-9b06-beb181ff6c20",
+    "twitchName": "franco",
+    "joinDate": "2017-12-25T10:04:48",
+    "lastActive": "2018-07-09T02:45:56",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8589acef6bbbbdb50",
+    "twitchId": "d1bbc1ad-203a-440d-bb41-5ff92a501a0c",
+    "twitchName": "lynn",
+    "joinDate": "2017-08-21T10:25:27",
+    "lastActive": "2017-04-24T06:06:03",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8668171c87963b010",
+    "twitchId": "f14b0ea9-53fa-4591-af8f-c7bc88c0d055",
+    "twitchName": "guzman",
+    "joinDate": "2017-08-17T04:43:25",
+    "lastActive": "2017-05-15T05:05:59",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e1b8148e69a3b8cc",
+    "twitchId": "809d8b09-8a96-49df-b896-2c433369d33a",
+    "twitchName": "lorrie",
+    "joinDate": "2018-01-21T12:57:13",
+    "lastActive": "2017-04-09T07:54:21",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8fbab370a4e39bb4a",
+    "twitchId": "9adac7ee-4147-4257-931f-69763b48e68f",
+    "twitchName": "bartlett",
+    "joinDate": "2017-11-22T12:58:07",
+    "lastActive": "2017-07-31T02:08:02",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d834194980bb0f39f7",
+    "twitchId": "710550c4-f521-4490-b5f5-fc7b1cce2da3",
+    "twitchName": "leanna",
+    "joinDate": "2017-06-14T04:14:59",
+    "lastActive": "2018-03-25T08:30:44",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d85bc4de98cf02fc2e",
+    "twitchId": "5b58cd29-7351-461c-8266-25df0f6f3224",
+    "twitchName": "kathie",
+    "joinDate": "2017-08-04T01:39:54",
+    "lastActive": "2018-04-12T08:24:13",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8765fd0e83fcb94c1",
+    "twitchId": "a5902f55-90e7-4867-8355-2554d3c8364c",
+    "twitchName": "barron",
+    "joinDate": "2017-05-06T06:42:28",
+    "lastActive": "2017-04-23T01:00:36",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d89970d4729bde6404",
+    "twitchId": "717789a0-bfa0-4ff9-b67d-283fb7762563",
+    "twitchName": "barnett",
+    "joinDate": "2017-03-23T06:25:54",
+    "lastActive": "2018-07-27T02:14:38",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d89a07a859c87498a4",
+    "twitchId": "76b99d20-c1e2-4024-a299-6c58d8d18a8e",
+    "twitchName": "leonard",
+    "joinDate": "2017-02-04T10:13:46",
+    "lastActive": "2018-01-06T06:01:23",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8455fd541b758c679",
+    "twitchId": "14817bd9-dfd5-43fc-a25f-ad2ab4db0b8f",
+    "twitchName": "dorsey",
+    "joinDate": "2017-10-25T12:05:30",
+    "lastActive": "2018-01-29T07:47:56",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8f6cd7cb8afd6f2af",
+    "twitchId": "3c8b57e0-7b8e-442a-a04a-5a849cab7641",
+    "twitchName": "melinda",
+    "joinDate": "2017-12-22T11:21:52",
+    "lastActive": "2017-09-24T03:13:32",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d803613c94e216de30",
+    "twitchId": "c7cc72f7-7654-431a-8cdf-ad6de8e20561",
+    "twitchName": "ramona",
+    "joinDate": "2017-11-17T04:49:39",
+    "lastActive": "2017-11-19T02:19:55",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e9a5f6e57019c6a3",
+    "twitchId": "e65e169f-c326-4ad2-a938-493ceec66956",
+    "twitchName": "mcfadden",
+    "joinDate": "2017-02-23T06:39:50",
+    "lastActive": "2017-10-09T06:15:33",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d86c3166fca9b744fc",
+    "twitchId": "cb097ad5-38e4-4eb8-a566-8282261e7498",
+    "twitchName": "lora",
+    "joinDate": "2018-04-30T03:55:16",
+    "lastActive": "2018-06-15T06:46:10",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8100dabec1eeb00fb",
+    "twitchId": "f635cc23-cfb1-4253-846e-3704965749e4",
+    "twitchName": "lakisha",
+    "joinDate": "2017-04-14T07:01:37",
+    "lastActive": "2017-12-22T02:58:20",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e139652d5064acd6",
+    "twitchId": "8bda60f1-c8e2-423b-b8bb-daa7fe9dd82b",
+    "twitchName": "miranda",
+    "joinDate": "2017-01-27T04:08:03",
+    "lastActive": "2017-03-19T12:56:12",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8c42487ba2da7012c",
+    "twitchId": "6467ba6c-cbcc-43b9-99d8-d09ba4e9f663",
+    "twitchName": "foley",
+    "joinDate": "2018-08-21T01:30:15",
+    "lastActive": "2018-05-24T08:23:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d86c7e2ee8fd1adb8b",
+    "twitchId": "fe870822-5a3f-4355-902f-a63163b5e461",
+    "twitchName": "frye",
+    "joinDate": "2017-09-05T07:45:43",
+    "lastActive": "2018-09-09T09:00:28",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8eba1baf396ba3f60",
+    "twitchId": "60d672d8-6a5e-4534-a9e7-c99c3d49fc82",
+    "twitchName": "lyons",
+    "joinDate": "2017-01-24T12:58:03",
+    "lastActive": "2017-03-27T03:28:48",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d888c65587566f8251",
+    "twitchId": "5944ca26-ebb9-4fca-a1bb-f869b3ca79b7",
+    "twitchName": "forbes",
+    "joinDate": "2018-05-03T11:16:44",
+    "lastActive": "2017-09-29T02:30:49",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8c56b516b9772d0bc",
+    "twitchId": "a7ba0ebb-a52c-49de-a959-a8d974840e83",
+    "twitchName": "clemons",
+    "joinDate": "2018-03-04T12:38:08",
+    "lastActive": "2018-03-06T05:03:15",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8934a532959b6d996",
+    "twitchId": "75fa376c-b93e-4775-bbd7-4f8b2718303b",
+    "twitchName": "barrera",
+    "joinDate": "2018-07-19T02:20:21",
+    "lastActive": "2017-08-02T12:03:40",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8ba69c80a44a295ec",
+    "twitchId": "0e0ae86e-70e8-488f-9f50-46f3bb708583",
+    "twitchName": "chaney",
+    "joinDate": "2018-06-03T06:32:22",
+    "lastActive": "2017-08-22T07:33:02",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8ddffd6584bf53958",
+    "twitchId": "8913cbf3-1ba0-4550-b62a-b9dd2b629696",
+    "twitchName": "leslie",
+    "joinDate": "2017-12-19T06:26:10",
+    "lastActive": "2017-04-25T06:49:22",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d88f824fdebe00841a",
+    "twitchId": "9cc6b7ba-ea80-4fe5-8b1d-e8523b9db0c5",
+    "twitchName": "teri",
+    "joinDate": "2017-12-11T02:08:11",
+    "lastActive": "2017-03-27T09:45:05",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e41e83ccfc107958",
+    "twitchId": "97ddfa6e-ef34-4ea0-aece-608e02e61581",
+    "twitchName": "faye",
+    "joinDate": "2017-07-01T05:10:55",
+    "lastActive": "2018-07-12T05:56:25",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d824a24ea0e7c2aef3",
+    "twitchId": "bb5cd6ae-f3a9-45f4-b4b1-da60234fadd5",
+    "twitchName": "vargas",
+    "joinDate": "2018-03-10T10:37:08",
+    "lastActive": "2018-09-16T12:48:50",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8464133e5f6768038",
+    "twitchId": "16addbb5-3c6e-40a7-88f5-ad080eaf709c",
+    "twitchName": "alyssa",
+    "joinDate": "2017-03-06T04:34:38",
+    "lastActive": "2018-05-29T02:05:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d809a9374201057302",
+    "twitchId": "7bfb8671-0c61-4ef2-9a1d-c8c75ca4b0a5",
+    "twitchName": "hanson",
+    "joinDate": "2018-02-08T10:10:09",
+    "lastActive": "2018-08-25T12:31:36",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8816a41dcf2d19719",
+    "twitchId": "6c11ba7d-8004-43af-97cb-70bdad138088",
+    "twitchName": "atkins",
+    "joinDate": "2017-03-08T10:25:18",
+    "lastActive": "2018-06-16T09:01:28",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8152f0a6e91f81a13",
+    "twitchId": "dde20a98-5fe3-4b6d-97fe-59b3363b7533",
+    "twitchName": "deleon",
+    "joinDate": "2017-11-02T07:25:29",
+    "lastActive": "2018-09-05T01:05:38",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d87db4aff60e0d3fe4",
+    "twitchId": "c9096a54-d6bb-4618-9e09-04b0828cfe7d",
+    "twitchName": "larsen",
+    "joinDate": "2017-03-21T06:18:27",
+    "lastActive": "2018-04-27T01:56:02",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d81da6ebfc7b113006",
+    "twitchId": "3adcff69-9222-404c-adc1-9cae8b0baef6",
+    "twitchName": "myra",
+    "joinDate": "2017-04-14T02:05:26",
+    "lastActive": "2017-02-12T02:04:43",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8edbd39964c6c4e11",
+    "twitchId": "b970164c-3a0b-4fa7-b77b-d9d072b824d4",
+    "twitchName": "angeline",
+    "joinDate": "2017-12-18T04:51:08",
+    "lastActive": "2017-07-07T11:00:55",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d833d2e32a18c37cdb",
+    "twitchId": "9e860387-ee39-4e36-80d8-d30f92f718d0",
+    "twitchName": "moss",
+    "joinDate": "2018-04-24T11:56:51",
+    "lastActive": "2017-03-26T11:08:15",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8a0a088b60de23252",
+    "twitchId": "e4e93501-3c1d-46d5-81a7-a8f6af181f8d",
+    "twitchName": "bryan",
+    "joinDate": "2017-07-27T11:42:01",
+    "lastActive": "2018-08-22T06:49:47",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d897e22aebc0c3a634",
+    "twitchId": "e52effee-0a90-4224-9b84-b53aefd5eac5",
+    "twitchName": "luz",
+    "joinDate": "2017-05-05T07:24:52",
+    "lastActive": "2018-01-28T04:25:28",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d80600cf1a846f143a",
+    "twitchId": "2bc5e859-cb0e-4827-9994-0be9ff2d04e0",
+    "twitchName": "briggs",
+    "joinDate": "2018-05-29T06:37:08",
+    "lastActive": "2017-03-31T07:10:39",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8869170d178f0c603",
+    "twitchId": "a55ed5a1-1934-462b-85e7-9f6c088452e8",
+    "twitchName": "reeves",
+    "joinDate": "2017-01-04T12:27:22",
+    "lastActive": "2018-03-18T08:09:26",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e3a7faf7395bf4a7",
+    "twitchId": "79038a10-d33d-44c2-a861-3a8cf0882bfd",
+    "twitchName": "lorna",
+    "joinDate": "2018-03-27T12:31:53",
+    "lastActive": "2017-03-16T10:35:54",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d85ce39ed7079b2eb3",
+    "twitchId": "30dd4e36-f62c-4762-9aaf-b4e24017a14d",
+    "twitchName": "blackwell",
+    "joinDate": "2018-06-09T12:52:07",
+    "lastActive": "2018-01-21T11:48:16",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8cf28dc699ff7de0e",
+    "twitchId": "1e73411f-ab2f-4f88-b6e2-8375367c2a32",
+    "twitchName": "foster",
+    "joinDate": "2018-04-25T02:05:07",
+    "lastActive": "2018-01-02T04:44:49",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8a49a2f0d228b515f",
+    "twitchId": "d2487936-7e10-414d-80ae-ea4c16420155",
+    "twitchName": "robinson",
+    "joinDate": "2017-11-11T02:12:56",
+    "lastActive": "2017-10-09T01:58:16",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d82457acdbc0116501",
+    "twitchId": "3fa342fe-ec20-4567-93e8-4e7dfe0ec665",
+    "twitchName": "guthrie",
+    "joinDate": "2017-03-08T11:55:22",
+    "lastActive": "2017-08-01T10:17:55",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d89da266717c726d73",
+    "twitchId": "a869e624-442c-4840-aa75-141d0d77fa32",
+    "twitchName": "griffith",
+    "joinDate": "2017-08-25T08:32:24",
+    "lastActive": "2018-06-07T05:20:52",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8a2e38883c52a64d0",
+    "twitchId": "42e7d7ad-e8ff-4efe-be59-d43e31c904d9",
+    "twitchName": "alison",
+    "joinDate": "2017-03-13T06:41:13",
+    "lastActive": "2017-04-25T10:02:01",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8bcad04a420f390fb",
+    "twitchId": "f225f892-880a-4a1d-bd4a-0ada83eb8b87",
+    "twitchName": "theresa",
+    "joinDate": "2018-02-26T09:31:27",
+    "lastActive": "2018-06-25T02:13:07",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8cc43cdf2e25c1e3c",
+    "twitchId": "1a7c865e-decd-4ea2-8c67-34efbd40a776",
+    "twitchName": "elba",
+    "joinDate": "2017-12-21T01:26:41",
+    "lastActive": "2017-10-31T04:26:32",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e98910b860400c8a",
+    "twitchId": "2bafdce6-f628-4338-b6c7-3b4c7d2be65e",
+    "twitchName": "fuentes",
+    "joinDate": "2017-09-08T06:15:57",
+    "lastActive": "2017-02-02T03:45:30",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8fb6cd635352abfc8",
+    "twitchId": "5b5f30ff-0280-46d3-b5ad-2a8055691265",
+    "twitchName": "suzanne",
+    "joinDate": "2018-05-08T09:22:45",
+    "lastActive": "2018-05-16T10:08:31",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8a5d17e10f991d4be",
+    "twitchId": "fe4c5d76-5a8b-4563-9e06-a76f6c1df55f",
+    "twitchName": "stein",
+    "joinDate": "2017-12-06T12:59:41",
+    "lastActive": "2017-05-04T07:36:50",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d80ac6e66531205828",
+    "twitchId": "abb5dc04-4646-4317-9c38-6f2329d12a7f",
+    "twitchName": "gabrielle",
+    "joinDate": "2018-06-24T08:41:00",
+    "lastActive": "2017-12-20T09:46:21",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d84606086cc75d858d",
+    "twitchId": "305ce17d-5cac-49b0-9242-1dd1fbe7f73e",
+    "twitchName": "nannie",
+    "joinDate": "2018-04-23T03:19:19",
+    "lastActive": "2017-05-10T11:24:57",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8f6b5ae96389f329b",
+    "twitchId": "404f2593-5403-4f4b-b87c-75b744432e09",
+    "twitchName": "sheree",
+    "joinDate": "2017-06-09T05:54:10",
+    "lastActive": "2017-09-02T10:47:33",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d88bc952d30073caaf",
+    "twitchId": "62fefc0a-c360-4f2a-8a4e-6a59f5305753",
+    "twitchName": "fernandez",
+    "joinDate": "2018-02-18T08:31:40",
+    "lastActive": "2017-08-19T03:37:00",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d87cb053915459a97a",
+    "twitchId": "ed37f495-54e8-446a-aad3-e5cdf77b8561",
+    "twitchName": "quinn",
+    "joinDate": "2018-03-11T10:57:00",
+    "lastActive": "2017-05-20T04:32:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d890ba256555ea9025",
+    "twitchId": "38842ddc-06a1-42d3-ae9c-6d1367a356f3",
+    "twitchName": "melendez",
+    "joinDate": "2018-05-22T01:32:11",
+    "lastActive": "2017-05-18T01:09:18",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d848462c98623226a3",
+    "twitchId": "af9fb61f-509b-4f03-8c93-12327a9774e3",
+    "twitchName": "francine",
+    "joinDate": "2017-04-14T02:40:53",
+    "lastActive": "2017-07-01T08:42:17",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d89ae057cf77fd29bc",
+    "twitchId": "f42d4ee8-f652-4dd6-b421-9fd17a9138a8",
+    "twitchName": "marjorie",
+    "joinDate": "2018-07-28T05:29:16",
+    "lastActive": "2018-01-20T10:15:52",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8d56a495d62b16838",
+    "twitchId": "4bce3cb6-ccac-4d76-9635-88f17e0c4274",
+    "twitchName": "inez",
+    "joinDate": "2018-08-27T10:42:13",
+    "lastActive": "2018-08-29T01:13:43",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d83bc3c45af2642a30",
+    "twitchId": "987b2e25-6331-4baa-834d-18799b19c498",
+    "twitchName": "hebert",
+    "joinDate": "2018-06-05T07:00:00",
+    "lastActive": "2017-11-12T12:33:01",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d85ddbaf7496c06e05",
+    "twitchId": "fd60030c-46e4-44a2-8976-ddbc67717ef0",
+    "twitchName": "lynne",
+    "joinDate": "2017-10-30T03:56:32",
+    "lastActive": "2017-07-30T06:15:14",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d86d7ef7ad764bb2e3",
+    "twitchId": "8aedb871-941b-4f1b-a388-eecf4afb1fea",
+    "twitchName": "kaye",
+    "joinDate": "2018-06-14T02:31:08",
+    "lastActive": "2017-03-22T06:58:05",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8b08eb8e3b9243cfb",
+    "twitchId": "ff9b8b5e-f9ac-475f-8eed-6fdebd5d82fb",
+    "twitchName": "henry",
+    "joinDate": "2017-06-02T02:33:26",
+    "lastActive": "2017-12-23T10:12:33",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8f30252651e14d9f5",
+    "twitchId": "4066b22e-5685-4b7a-ae9f-a44765b6fc55",
+    "twitchName": "oneil",
+    "joinDate": "2017-06-29T09:08:38",
+    "lastActive": "2017-09-13T05:24:28",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8c6b2535cd3340bc7",
+    "twitchId": "7115c5eb-8ffb-4298-b750-a065521f99f3",
+    "twitchName": "dana",
+    "joinDate": "2017-05-14T08:11:21",
+    "lastActive": "2017-08-01T09:02:47",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d863fbea5f11d48ddf",
+    "twitchId": "13d59ae7-2c43-4105-bb58-d8019b7db39e",
+    "twitchName": "evangelina",
+    "joinDate": "2017-09-11T05:42:48",
+    "lastActive": "2018-01-04T03:56:31",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d89a217d5cea48e731",
+    "twitchId": "b20e846f-2148-41f1-baf9-57eea529e47b",
+    "twitchName": "marisol",
+    "joinDate": "2017-12-29T06:37:54",
+    "lastActive": "2017-06-02T12:42:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8fd7cad5341fc9482",
+    "twitchId": "53139a5f-e907-49c8-b986-d14ea3fe957d",
+    "twitchName": "tommie",
+    "joinDate": "2017-03-19T11:43:02",
+    "lastActive": "2017-09-11T02:09:58",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d843d34fc2d855715a",
+    "twitchId": "c3a09148-82cc-46dd-9a2b-5c393c304ebd",
+    "twitchName": "isabel",
+    "joinDate": "2018-08-02T02:47:07",
+    "lastActive": "2018-08-23T02:13:29",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d83800fca21db326bc",
+    "twitchId": "74950458-b5e5-48a1-9725-a438278e3772",
+    "twitchName": "marcie",
+    "joinDate": "2017-04-19T03:03:40",
+    "lastActive": "2017-09-05T02:43:35",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d869cb258a96de75b8",
+    "twitchId": "c694d09d-7987-4aef-b1da-e3027b7cef16",
+    "twitchName": "maude",
+    "joinDate": "2017-08-25T06:05:07",
+    "lastActive": "2017-05-21T08:15:15",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d869985cd9012d567d",
+    "twitchId": "e2b9230e-3e2f-48b6-a7a4-e426dc281713",
+    "twitchName": "isabella",
+    "joinDate": "2018-05-20T09:49:10",
+    "lastActive": "2017-06-17T06:28:49",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8d243c9d750ce963b",
+    "twitchId": "58f74f63-ea3f-43fc-90b4-b687004b8e24",
+    "twitchName": "kerr",
+    "joinDate": "2017-08-29T11:51:38",
+    "lastActive": "2018-08-07T11:35:40",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8d98b28c8a2d64eed",
+    "twitchId": "6638b335-3de2-4463-99c1-5432011ea1a4",
+    "twitchName": "stella",
+    "joinDate": "2017-01-01T07:59:28",
+    "lastActive": "2017-02-03T09:38:22",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d85cba1ac0c237d8a9",
+    "twitchId": "908c0885-a806-49b3-a9c8-d589a5bc869c",
+    "twitchName": "whitley",
+    "joinDate": "2018-01-02T05:52:11",
+    "lastActive": "2017-02-14T04:57:24",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d89e551105cecbe052",
+    "twitchId": "188d68b4-cde2-4a58-8ae2-250961156500",
+    "twitchName": "karen",
+    "joinDate": "2017-08-10T10:34:44",
+    "lastActive": "2018-06-08T02:26:43",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d83138dac620e07e9e",
+    "twitchId": "345640ed-9780-427e-a3ae-9914a8662df2",
+    "twitchName": "maryellen",
+    "joinDate": "2017-03-04T08:27:54",
+    "lastActive": "2017-09-20T09:24:48",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8beb49aca3c83c5ae",
+    "twitchId": "19c83c12-8f53-4aac-95cb-0e5955c70f9f",
+    "twitchName": "bowman",
+    "joinDate": "2018-08-26T03:53:37",
+    "lastActive": "2018-03-11T04:37:29",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8392c6acf68a06f17",
+    "twitchId": "1a288795-7af2-46a4-97d8-dc9012e222ee",
+    "twitchName": "cathleen",
+    "joinDate": "2017-12-24T10:52:47",
+    "lastActive": "2017-12-19T05:14:18",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d891fda6ceefa08d79",
+    "twitchId": "9a3b4119-d156-42c6-987a-4819150e689b",
+    "twitchName": "amparo",
+    "joinDate": "2017-03-05T05:57:35",
+    "lastActive": "2018-04-22T03:14:40",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8cb64d65f801d8ce9",
+    "twitchId": "cecbdbdc-3fd9-4c54-8eef-f3d5621d6556",
+    "twitchName": "kristen",
+    "joinDate": "2017-06-24T03:34:35",
+    "lastActive": "2017-10-12T06:08:45",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8549cc5a08fbfdd72",
+    "twitchId": "9967222b-3cd2-4830-b0c7-bcab8e180f0e",
+    "twitchName": "walker",
+    "joinDate": "2017-04-09T01:24:07",
+    "lastActive": "2018-03-30T10:44:37",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8559c958ff64b2db4",
+    "twitchId": "7b9fd3ff-7153-41a3-9a82-ad44cb99e8ab",
+    "twitchName": "hamilton",
+    "joinDate": "2018-08-22T04:34:24",
+    "lastActive": "2017-05-11T08:31:31",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d86c61719cfeabc0d6",
+    "twitchId": "3b9b6b96-4617-4135-85c9-4f16d7f042db",
+    "twitchName": "marva",
+    "joinDate": "2017-10-05T03:36:17",
+    "lastActive": "2017-09-06T07:04:56",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8a0f98c97a11c6e14",
+    "twitchId": "df951a0a-18c9-43c1-a35a-f5426e6fb436",
+    "twitchName": "baxter",
+    "joinDate": "2017-06-18T09:17:25",
+    "lastActive": "2018-09-05T11:49:47",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8210f6e1f472caf05",
+    "twitchId": "271d06bb-bd31-4154-bbfe-082663bcec44",
+    "twitchName": "erin",
+    "joinDate": "2017-01-19T06:32:40",
+    "lastActive": "2017-09-30T06:16:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8212fb109abb8a1f6",
+    "twitchId": "d1f9f604-819b-40e2-95af-1b82d30ac384",
+    "twitchName": "moses",
+    "joinDate": "2017-10-28T05:42:10",
+    "lastActive": "2018-03-06T05:51:26",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8103f02a4b69b3b18",
+    "twitchId": "0ab21c78-fe5c-4782-b005-d695123d932c",
+    "twitchName": "wade",
+    "joinDate": "2017-07-18T01:52:45",
+    "lastActive": "2017-12-13T02:08:09",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8868310512ab1f9ba",
+    "twitchId": "39510a07-abe4-43a8-a600-6be655ec4cd2",
+    "twitchName": "mccarthy",
+    "joinDate": "2017-07-02T04:41:12",
+    "lastActive": "2017-05-07T11:28:06",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8eed94aa7696ac371",
+    "twitchId": "c32fb2e5-c044-4a58-966b-1bdfdcbfc52e",
+    "twitchName": "consuelo",
+    "joinDate": "2017-06-16T01:30:31",
+    "lastActive": "2017-07-14T06:42:44",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8d0a442fcc7226684",
+    "twitchId": "013e655c-8611-4787-9353-379345eab16a",
+    "twitchName": "delgado",
+    "joinDate": "2018-01-24T06:04:10",
+    "lastActive": "2018-07-06T07:07:40",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d80d23975b576aaaf7",
+    "twitchId": "dfed1e05-4f0a-4c9a-9966-225d213a5b42",
+    "twitchName": "susan",
+    "joinDate": "2017-07-01T02:58:20",
+    "lastActive": "2017-12-20T10:02:20",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8386d53d852b1ee46",
+    "twitchId": "03c80565-b666-4646-829f-31972edafb86",
+    "twitchName": "nadia",
+    "joinDate": "2018-04-28T01:40:00",
+    "lastActive": "2017-05-01T06:49:56",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e0352d56f552497e",
+    "twitchId": "9493b36a-eaf9-495a-8115-a4c22ac27741",
+    "twitchName": "frances",
+    "joinDate": "2017-09-01T03:15:55",
+    "lastActive": "2017-10-27T07:24:36",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8bd3b594a823442e7",
+    "twitchId": "d525a7c0-5267-4240-9891-bd4a782e1243",
+    "twitchName": "tania",
+    "joinDate": "2017-01-10T12:52:50",
+    "lastActive": "2017-04-04T02:25:56",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d81987ce857db4d38f",
+    "twitchId": "93d07f38-e021-4431-8948-169aee3796a2",
+    "twitchName": "vasquez",
+    "joinDate": "2017-04-17T04:10:27",
+    "lastActive": "2017-11-21T10:19:17",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d83e49fee32d7a4a2f",
+    "twitchId": "ff70c1bd-845f-4f68-a37c-160a6505235e",
+    "twitchName": "angelina",
+    "joinDate": "2017-12-13T06:03:24",
+    "lastActive": "2017-12-01T09:29:41",
+    "isAdmin": false
+  },
+  {
+    "_id": "5baac7d8e25c467c6d17d7c7",
+    "twitchId": "24e78445-68a0-4c40-bd0c-700bd014ae30",
+    "twitchName": "geraldine",
+    "joinDate": "2017-06-04T02:50:54",
+    "lastActive": "2017-08-04T08:42:22",
+    "isAdmin": false
+  }
+]
