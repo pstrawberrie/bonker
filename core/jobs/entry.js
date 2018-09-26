@@ -61,16 +61,14 @@ module.exports = (jobJson, internal) => {
 
       case 'user':
       case 'info':
-      case 'me':
-      case 'self':
-        const getUser = require('./default/getUser');
-        getUser(mongoose, twitchSocketClient, user)
+        const userInfo = require('./default/userInfo');
+        userInfo(mongoose, twitchSocketClient, user, userCommand)
         .then(fetchedUser => {
-          console.log('ran getUser command. result:');
-          console.log(fetchedUser);
+          console.log(chalk.yellow('ran userInfo command. result:'));
+          console.log(chalk.yellow(fetchedUser));
           finishJob();
         }).catch(err => console.log(err));
-        break;
+      break;
 
       default:
         finishJob();
