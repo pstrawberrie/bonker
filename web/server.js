@@ -1,6 +1,7 @@
 const config = require('../env/config').getConfig(process.env.NODE_ENV);
 const path = require('path');
 const chalk = require('chalk');
+const moment = require('moment');
 
 /**
  * Database Connection
@@ -42,6 +43,7 @@ function startServer() {
   app.use((req, res, next) => {
     //global middleware here
     res.locals.currentPath = req.path;
+    res.locals.m = moment;
     next();
   });
   

@@ -76,9 +76,9 @@ const Modal = {
 
   //+ Initialize Modals
   init() {
-    this.addEventListeners();
+    if(this.ele.modals && this.ele.modals.length > 0) this.addEventListeners();
   }
 
-}
+};
 
 export default Modal;

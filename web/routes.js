@@ -2,12 +2,27 @@ const express = require('express');
 const router = express.Router();
 const { catchErrors } = require('./handlers/errorHandlers');
 
-// Controllers
+/**
+ * Require Controllers
+ */
 const defaultController = require('./controllers/defaultController');
+const userController = require('./controllers/userController');
 
-// ++ Items
+/**
+ * Index + Generic Routes
+ */
 router.get('/',
   catchErrors(defaultController.index)
+);
+router.get('/users',
+  catchErrors(defaultController.users)
+);
+
+/**
+ * Core Services POST Routes
+ */
+router.post('/user/%user/remove', 
+  catchErrors(userController.removeUser)
 );
 
 module.exports = router;

@@ -2,15 +2,31 @@
 @white: #fff;
 @black: #000;
 @light: #efefef;
-@dark: #333;
+@dark: #252525;
+@darker: #111;
 
 @lightTransparent: rgba(255,255,255,.55);
 @lighterTransparent: rgba(255,255,255,.85);
 @darkTransparent: rgba(0,0,0,.55);
 @darkerTransparent: rgba(0,0,0,.85);
 
+@gold: #efa037;
+
 @error: #f03844;
 @success: #30f748;
+
+//+ Color Helpers
+
+//- Color Backgrounds
+.bgBlack {background: @black!important; color: @white!important;}
+.bgWhite {background: @white!important; color: @dark!important;}
+.bgError {background: @error!important; color: @white!important;}
+.bgSuccess {background: @success!important; color: @dark!important;}
+
+//- Text Colors
+.colorSuccess {color: @success!important;}
+.colorError {color: @error!important;}
+.colorGold {color: @gold!important;}
 
 // Base
 html,
@@ -38,6 +54,16 @@ body {
       background: @darkTransparent;
     }
   }
+
+  &.success {
+    .bgSuccess;
+    span {.colorSuccess;}
+  }
+
+  &.error {
+    .bgError;
+    span {.colorError;}
+  }
 }
 
 // Modals
@@ -54,5 +80,25 @@ body {
 .dashboard {
   &__area {
     background: @darkTransparent;
+  }
+}
+
+// Userlist
+.userlist {
+  &__user {
+    background: @darkTransparent;
+
+    &_item {
+      &.name {background: @darkTransparent;}
+      &.name [data-twitch-id] {.bgSuccess;}
+    }
+
+    &_actions {
+      border-color: @darker;
+
+      .btn.copied {
+        .bgSuccess;
+      }
+    }
   }
 }
