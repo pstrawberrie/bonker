@@ -1,12 +1,29 @@
 const chalk = require('chalk');
 
+/**
+ * Frisk User - called on every chat message
+ * @param {object} mongoose 
+ * @param {object} jobJson 
+ */
 module.exports = (mongoose, jobJson) => {
   const db = require('../../../lib/util/db')(mongoose);
+
+  function updateUserLastActive(user) {
+    return new Promise((resolve, reject) => {
+      db.updateTwitchUser({twitchId: user.twitchId}, {lastActive: new Date()}, {new: true})
+      .catch(err => reject(err))
+      .then(updatedUser => {
+        resolve(updatedUser);
+      })
+    });
+    
+  }
 
   return new Promise((resolve, reject) => {
     db.getUserByTwitchId(jobJson.user.id)
     .then(user => {
       if(user == null) {
+        // If user doesn't exist yet
         console.log('User doesn\'t exist');
         db.createTwitchUser({twitchId: jobJson.user.id, twitchName: jobJson.user.name})
         .then(() => {
@@ -18,16 +35,19 @@ module.exports = (mongoose, jobJson) => {
         })
         .catch(err => reject(err));
       } else {
-        // Check if the user's twitch-id exists but the user's twitch name has changed
+        // If the user's twitch-id exists but the user's twitch name has changed
         if(user.twitchName !== jobJson.user.name && user.twitchId === jobJson.user.id) {
-          db.updateTwitchUser({twitchId: jobJson.user.id}, {twitchName: jobJson.user.name}, {new: true})
+          db.updateTwitchUser({twitchId: jobJson.user.id}, {twitchName: jobJson.user.name, lastActive: new Date()}, {new: true})
           .then(updatedUser => {
-            console.log(chalk.grey(`-> Updated existing user's twitch name`));
+            console.log(chalk.grey(`-> Updated existing user's twitch name + last active`));
             resolve(updatedUser);
           }).catch(err => {console.log(`Error updating existing id with new twitch name: ${err}`)});
         } else {
-          console.log(chalk.grey(`-> User already exists`));
-          resolve(user);
+          updateUserLastActive(user).catch(err => reject(err))
+          .then(updatedUser => {
+            console.log(chalk.grey(`-> User already exists. Updated Last active`));
+            resolve(updatedUser);
+          });
         }
       }
     }).catch(err => reject(err));

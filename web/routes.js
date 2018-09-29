@@ -15,7 +15,7 @@ router.get('/',
   catchErrors(defaultController.index)
 );
 router.get('/users',
-  catchErrors(defaultController.users)
+  catchErrors(userController.index)
 );
 
 /**

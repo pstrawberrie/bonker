@@ -16,17 +16,3 @@ exports.index = async (req, res) => {
   });
 
 }
-
-// GET Users Page
-exports.users = async (req, res) => {
-
-  const userCount = await User.countDocuments({});
-  const users = await User.find({}).limit(50);
-  console.log(`Default controller for /users got the first ${users.length} out of ${userCount} users`);
-  res.render('users', {
-    title: 'Users',
-    users,
-    userCount
-  })
-
-}

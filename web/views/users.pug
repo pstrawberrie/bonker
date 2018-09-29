@@ -2,13 +2,15 @@ extends layout
 
 block content
   .section.hero
-    | #{userCount} Users
+    div #{userCount} Users
+    .user-search
+      input(type='text', placeholder='Search for User')
   .section.userlist(data-userlist="container")
     each user in users
       .userlist__user
         .userlist__user_item.name
           if user.isAdmin
-            span.fa.fa-star.colorGold
+            span.fa.fa-star.colorGold(title="Admin")
             span #{user.twitchName}
           else
             span= user.twitchName
@@ -16,6 +18,6 @@ block content
         .userlist__user_item.joined Joined  #{m(user.joinDate).fromNow()}
         .userlist__user_actions
           .btn(data-twitch-id=user.twitchId, data-icon-above="true") Copy ID
-            span.icon-above.fa.fa-clipboard-check
+            span.icon-event.above.fa.fa-clipboard-check
 
     

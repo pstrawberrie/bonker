@@ -49,6 +49,10 @@ const util = {
     }, 250);
   },
 
+  /**
+   * Copy text to the clipboard
+   * @param {string} str 
+   */
   clipboard(str) {
     return new Promise(function(resolve, reject) {
       var success = false;
@@ -62,6 +66,40 @@ const util = {
       document.removeEventListener("copy", listener);
       success ? resolve(): reject();
     });
+  },
+
+  /**
+   * Page Loader
+   * @param {boolean} bool
+   */
+  pageLoader(bool) {
+    const loaderEle = document.getElementsByClassName('page-loader')[0];
+    if(bool) {
+      loaderEle.classList.add('active')
+    } else {
+      loaderEle.classList.remove('active')
+    }
+  },
+
+  /**
+   * Debounce
+   * @param {function} func
+   * @param {integer} wait
+   * @param {bool} immediate
+   */
+  debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
   },
 
 }

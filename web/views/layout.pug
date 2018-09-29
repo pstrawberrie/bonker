@@ -29,6 +29,10 @@ html
     block modals
       include includes/modals
 
+    //- Loader
+    .page-loader
+      span.loader.ra.ra-aware.animated.infinite.pulse.fast
+
     block scripts
       script(src=`/socket.io/socket.io.js`)
       script(src="/dist/app.js")

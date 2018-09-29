@@ -25,22 +25,26 @@
   }
 
   // Attempting to support simple animations, "tooltip" style
-  .icon-above {
-    opacity: 0;
-    position: absolute;
-    z-index: -2;
-    left: 0;
-    right: 0;
-    transform: translate3d(0,-18px,0);
-    transition: all .3s ease-in-out;
-    font-size: 2rem;
+  .icon-event {
+    &.above {
+      opacity: 0;
+      position: absolute;
+      z-index: -2;
+      left: 0;
+      right: 0;
+      transform: translate3d(0,-18px,0);
+      transition: all .3s ease-in-out;
+      font-size: 2rem;
+    }
   }
   &.success,
   &.error {
-    .icon-above {
-      opacity: 1;
-      z-index: 2;
-      transform: translate3d(0,-52px,0);
+    .icon-event {
+      &.above {
+        opacity: 1;
+        z-index: 2;
+        transform: translate3d(0,-52px,0);
+      }
     }
   }
 
