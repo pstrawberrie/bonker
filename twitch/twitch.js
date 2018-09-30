@@ -24,9 +24,7 @@ function sendJob(data) {
 
 /**
  * Sends a Message From the Bot
- * @param {string} msgType
- * @param {string} msgTarget
- * @param {string} msg
+ * @param {object} data - data about the message to send 
  */
 function botSend(data) {
   if(!data.msg || config.testMode) return;
@@ -34,11 +32,83 @@ function botSend(data) {
     twitch.whisper(data.msgTarget, data.msg)
     .then(data => { console.log('botsend whisper successful') })
     .catch(err => console.log('error in botsend whisper: ' + err));
+  } else if(data.msgType === 'action') {
+    twitch.action(config.twitchAdmin, data.msg)
+    .then(data => { console.log('botsend action successful') })
+    .catch(err => console.log('error in botsend action: ' + err));
   } else {
     twitch.say(config.twitchAdmin, data.msg)
-    .then(data => { console.log('botsend successful') })
+    .then(data => { console.log('botsend say successful') })
     .catch(err => console.log('error in botsend say: ' + err));
   }
+}
+
+/**
+ * Mods/unmods a User
+ * @param {string} twitchName - user's twitch name
+ * @param {boolean} bool - true to mod, false to unmod
+ */
+function modUser(twitchName, bool) {
+  if(config.testMode) {
+    console.log(`mock mod user ${twitchName} with flag ${bool ? 'true' : 'false'}`);
+    return;
+  }
+  if(bool) {
+    twitch.mod(config.twitchAdmin, twitchName)
+    .catch(err => console.log(`err modding ${twitchName}: ${err}`))
+    .then(result => {console.log(`modded ${twitchName}`)});
+  } else {
+    twitch.unmod(config.twitchAdmin, twitchName)
+    .catch(err => console.log(`err unmodding ${twitchName}`))
+    .then(result => {console.log(`unmodded ${twitchName}`)});
+  }
+}
+
+/**
+ * Bans/unbans a User
+ * @param {string} twitchName - user's twitch name
+ * @param {string} reason - reason for ban
+ * @param {boolean} bool - true to ban, false to unban
+ */
+function banUser(twitchName, reason, bool) {
+  if(config.testMode) {
+    console.log(`mock ban user ${twitchName} with flag ${bool ? 'true' : 'false'}`);
+    return;
+  }
+  if(bool) {
+    twitch.ban(config.twitchAdmin, twitchName, reason)
+    .catch(err => console.log(`err banning ${twitchName}: ${err}`))
+    .then(result => {
+      botSend({msgType: 'action', msg: `banned ${twitchName}`});
+      console.log(`banned ${twitchName}: ${reason}`);
+    });
+  } else {
+    twitch.unban(config.twitchAdmin, twitchName)
+    .catch(err => console.log(`err unbanning ${twitchName}`))
+    .then(result => {
+      botSend({msgType: 'action', msg: `unbanned ${twitchName}`});
+      console.log(`unbanned ${twitchName}`);
+    });
+  }
+}
+
+/**
+ * Timeout a User
+ * @param {string} twitchName - user's twitch name
+ * @param {number} duration - duration of timeout
+ * @param {string} reason - reason for timeout
+ */
+function timeoutUser(twitchName, duration, reason) {
+  if(config.testMode) {
+    console.log(`mock timeout user ${twitchName} with duration ${duration}`);
+    return;
+  }
+  twitch.timeout(config.twitchAdmin, twitchName, duration, reason)
+  .catch(err => console.log(`err timing out ${twitchName}: ${err}`))
+  .then(result => {
+    botSend({msgType: 'action', msg: `timed out ${twitchName} for ${duration} seconds: ${reason}`});
+    console.log(`timed out ${twitchName} for ${duration}sec: ${reason}`);
+  });
 }
 
 //-----------------//
@@ -93,7 +163,11 @@ twitch.on("chat", function (channel, userstate, message, self) {
   //- Soft validation
   //- Accept all standard chat messages
   //- Only allow whispers from bot admin (config.twitchAdmin)
-  if (self || !canSendJobs) return;
+  if (self) return;
+  if (!canSendJobs) {
+    console.log(chalk.red('Blocked Job in Twitch Service (canSendJobs === false)'));
+    return;
+  }
   if (userstate['message-type'] === 'whisper' && userstate.username !== config.twitchAdmin) {
     console.log(chalk.red(`Received whisper from non-admin "${userstate.username}". Denying job.`));
     return;
@@ -123,7 +197,7 @@ if(config.testMode) {
 }
 
 io.on('connection', client => {
-  console.log(chalk.grey(`+ Client Connected to Websocket +`));
+  console.log(chalk.grey(`+ Client Connected to Twitch Socket +`));
 
   // Send a Job from Test Mode
   if(config.testMode) {
@@ -145,11 +219,36 @@ io.on('connection', client => {
   // Post Request from Core or Web
   client.on('post', data => {
     const parsedData = JSON.parse(data);
-    console.log(chalk.grey(`Post Request from another Service: "${parsedData}"`));
+    console.log(chalk.grey(`Post Request from another Service: "${parsedData.msg}"`));
     botSend(parsedData);
 
     if(config.testMode) io.emit('post', parsedData);
-  }); 
+  });
+
+  // Modify User Request from Core (don't send from web)
+  client.on('modifyUser', data => {
+    const parsedData = JSON.parse(data);
+    console.log(chalk.grey(`Modify Request from another Service: "${parsedData}"`));
+    switch(parsedData.type) {
+      case 'mod':
+        modUser(parsedData.twitchName, true);
+        break;
+      case 'unmod':
+        modUser(parsedData.twitchName, false);
+        break;
+      case 'ban':
+        modUser(parsedData.twitchName, parsedData.reason, true);
+        break;
+      case 'unban':
+        modUser(parsedData.twitchName, false);
+        break;
+      case 'timeout':
+        modUser(parsedData.twitchName, parsedData.duration, parsedData.reason);
+        break;
+      default:
+        return;
+    }
+  });
 
 });
 

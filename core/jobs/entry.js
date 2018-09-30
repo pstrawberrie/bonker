@@ -28,6 +28,11 @@ function finishJob() {
 const webSocketClient = require('socket.io-client').connect(`http://localhost:${config.webPort}`);
 webSocketClient.on('connect', function open() {
   console.log(chalk.grey(`+ Core Entry is connected to Web Socket +`));
+
+  // Special Requests from web
+  webSocketClient.on('core', (data) => {
+    console.log(`Web socket sent a core request: ${data}`);
+  });
 });
 function sendSocketToWeb(data) {
   webSocketClient.emit('core', data);
@@ -52,7 +57,7 @@ module.exports = (jobJson, internal) => {
   function processCommand(command, user) {
     const userCommand = twitchUtil.parseCommand(config.twitchCommandFlag, command);
     if(userCommand == null) {
-      finishJob();  
+      finishJob();
       return;
     }
 

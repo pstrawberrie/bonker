@@ -7,14 +7,30 @@ const Screen = mongoose.model('Screen');
 //+ GET Users Index
 exports.index = async (req, res) => {
 
-  const userCount = await User.countDocuments({});
-  const users = await User.find({}).limit(50).sort({lastActive: -1});
+  const userCountPromise = User.countDocuments({});
+  const usersPromise = User.find({}).limit(50).sort({lastActive: -1});
+  const [userCount, users] = await Promise.all([userCountPromise, usersPromise]);
   console.log(`Default controller for /users got the first ${users.length} out of ${userCount} users`);
   res.render('users', {
     title: 'Users',
     users,
     userCount
   });
+
+}
+
+//+ POST search user
+exports.searchUser = async (req, res) => {
+
+  const searchString = req.body.searchString;
+  let query = {twitchName: {$regex: searchString, $options: 'i'}};
+  if(searchString === '') query = {};
+  const users = await User.find(query).limit(50).sort({lastActive: -1});
+  if(users && users.length > 0) {
+    res.json(users);
+  } else {
+    res.json({result: null});
+  }
 
 }
 

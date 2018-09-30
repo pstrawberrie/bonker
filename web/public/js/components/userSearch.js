@@ -1,4 +1,6 @@
 import util from '../util';
+import axios from 'axios';
+import { UpdateUserList } from './userlist';
 
 const UserSearch = {
 
@@ -8,11 +10,23 @@ const UserSearch = {
     // Input Keyup
     const inputKeyupEvent = util.debounce(e => {
       const inputVal = e.target.value.trim();
-      if (inputVal === '') return;
-      console.log(inputVal);
+      UserSearch.doSearch(inputVal);
     }, 420);
 
     this.inputEle.addEventListener('keyup', inputKeyupEvent);
+  },
+
+  doSearch(searchString) {
+    util.pageLoader(true);
+    axios.post('/user/search', {
+      searchString
+    }).catch(err => {
+      console.log(`Error with user search POST: ${err}`);
+      util.pageLoader(false);
+    }).then(result => {
+      if(result.data.result !== null) UpdateUserList(result.data);
+      util.pageLoader(false);
+    });
   },
 
   init() {

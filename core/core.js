@@ -14,9 +14,14 @@ mongoose.connection.on('error', (err) => {
 mongoose.connection.once('open', (err) => {
   console.log(chalk.cyan(`+++ Connected to Mongodb +++`));
   requireModels();
-  seed().then(() => {
+  // If config.testMode, seed DB
+  if(config.testMode) {
+    seed().then(() => {
+      rabbitConnect();
+    }).catch(err => console.log(`Seed Failed: ${err}`));
+  } else {
     rabbitConnect();
-  }).catch(err => console.log('Seed Failed'));
+  }
 });
 
 /**

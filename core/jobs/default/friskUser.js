@@ -16,7 +16,6 @@ module.exports = (mongoose, jobJson) => {
         resolve(updatedUser);
       })
     });
-    
   }
 
   return new Promise((resolve, reject) => {
@@ -25,7 +24,13 @@ module.exports = (mongoose, jobJson) => {
       if(user == null) {
         // If user doesn't exist yet
         console.log('User doesn\'t exist');
-        db.createTwitchUser({twitchId: jobJson.user.id, twitchName: jobJson.user.name})
+        const newUserObj = {
+          twitchId: jobJson.user.id,
+          twitchName: jobJson.user.name,
+          twitchMod: jobJson.user.mod,
+          twitchSubscriber: jobJson.user.subscriber,
+        }
+        db.createTwitchUser(newUserObj)
         .then(() => {
           console.log(chalk.grey(`-> Created new record for ${jobJson.user.name}/${jobJson.user.id}`));
           db.getUserByTwitchId(jobJson.user.id).then(newUser => {

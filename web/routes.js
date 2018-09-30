@@ -11,18 +11,15 @@ const userController = require('./controllers/userController');
 /**
  * Index + Generic Routes
  */
-router.get('/',
-  catchErrors(defaultController.index)
-);
-router.get('/users',
-  catchErrors(userController.index)
-);
+router.get('/', catchErrors(defaultController.index));
+router.get('/users', catchErrors(userController.index));
 
 /**
  * Core Services POST Routes
  */
-router.post('/user/%user/remove', 
-  catchErrors(userController.removeUser)
-);
+
+router.post('/user/search', catchErrors(userController.searchUser));
+router.post('/user/remove', catchErrors(userController.removeUser));
+
 
 module.exports = router;
